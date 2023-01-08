@@ -19,12 +19,13 @@ let information = {
         "2019": "bsc-5th / bsc-6th",
         "2020": "lockdown",
         "2021": "bsc-7th-a / bsc-8th-a",
-        "2022": "bsc-7th-b / bsc-8th-b"
+        "2022": "bsc-7th-b / bsc-8th-b",
+        "2023": "enosis / research / gym"
     },
 
     "v1stStart"   : "2004",
-    "v2ndLast"    : "2021",
-    "v3rdCurrent" : "2022",
+    "v2ndLast"    : "2022",
+    "v3rdCurrent" : "2023",
 
     "undergraduate_options" : [
         "undergraduate", "result", "exam", "short",
@@ -190,7 +191,7 @@ function graph_rendering_b(text, title, pos, neg) {
 
 
 function graph_rendering_days(statistics_days) {
-    let text = "from " + information['v2ndLast'] + " - " + information['v3rdCurrent'];
+    let text = "from 2021" + " - " + information['v3rdCurrent'];
     let title = "day";
     let type = "splineArea";
     let xy = {};

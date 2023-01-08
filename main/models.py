@@ -116,3 +116,14 @@ class WeightYearB(models.Model):
     class Meta:
         managed = False
         db_table = 'main_weight_year_b'
+
+
+# class Year2023(models.Model):
+#     year = models.TextField()
+#     event = models.TextField()
+#     weight = models.TextField()
+#     value = models.TextField()
+#
+#     class Meta:
+#         managed = False
+#         db_table = 'main_year_2023'

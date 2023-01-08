@@ -78,20 +78,20 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
 
         # OPTION 2
-        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        # 'NAME': 'psycheval',
-        # 'USER': 'postgres',
-        # 'PASSWORD': 'nishan',
-        # 'HOST': 'localhost',
-        # 'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'done_backend_psych_eval',
+        'USER': 'postgres',
+        'PASSWORD': 'nishan',
+        'HOST': 'localhost',
+        'PORT': '5432',
 
         # OPTION 3
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd7pu4feroo8s5n',
-        'USER': 'zwvgvxrtrcezmy',
-        'PASSWORD': '52331085e612ca3d83de3cafd1b84c520c716faa83bba7941008b7fd8d933f5d',
-        'HOST': 'ec2-44-206-197-71.compute-1.amazonaws.com',
-        'PORT': '5432',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'd7pu4feroo8s5n',
+        # 'USER': 'zwvgvxrtrcezmy',
+        # 'PASSWORD': '52331085e612ca3d83de3cafd1b84c520c716faa83bba7941008b7fd8d933f5d',
+        # 'HOST': 'ec2-44-206-197-71.compute-1.amazonaws.com',
+        # 'PORT': '5432',
     }
 }
 
