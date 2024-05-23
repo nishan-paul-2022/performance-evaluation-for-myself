@@ -1,0 +1,11 @@
+    {% load static %}
+
+    <div class="map">
+        {% for row in imonlyhuman_summary %}
+            <div class="map__container">
+                <div class="map__row" style="width: {{ row.value }}%; background-color: rgba(71, 89, 126, 0.85);">
+                    {{ row.key }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>

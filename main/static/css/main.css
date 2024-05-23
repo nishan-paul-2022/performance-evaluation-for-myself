@@ -1,85 +1,131 @@
 :root {
-  --font: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+  font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
 }
 
-#id01 {
+#main-container {
     background-color: #EEEEEE;
-    margin: 1%;
 }
 
-#id01 button{
-    width: 12%;
-    margin: auto 1%;
-    background-color: #04293A;
-    color: #FFFFFF;
-}
-
-@media only screen and (max-width: 960px) {
-    #id01 button{
-        width: auto;
-    }
-}
-
-#id02 {
-    font-family: var(--font);
+.slogan {
     font-size: 1vw;
 }
 
-#id03 {
-    font-family: var(--font);
+#canvas-chart {
     margin: 2vw auto;
 }
 
-.id04 {
+#undergraduate-options {
+    text-align: center;
+}
+
+.undergraduate-table {
     border-collapse: collapse;
     margin: 2vw auto;
 }
 
-.id04 td, .id04 th {
+.undergraduate-table td, .undergraduate-table th {
     border: 0.1vw solid #04293A;
     padding: 0.8vw;
     text-align: left;
 }
 
-.id04 th {
+.undergraduate-table th {
     background-color: #000000;
     color: #FFFFFF;
 }
 
-.id04 tr:nth-child(even) {background-color: rgba(71, 89, 126, 0.85);}
-.id04 tr:nth-child(odd) {background-color: rgba(71, 89, 126, 0.65);}
-.id04 tr:hover {background-color: #FFFFFF;}
-
-#id05 {
-    text-align: center;
+.undergraduate-table tr:nth-child(even) {
+    background-color: rgba(71, 89, 126, 0.85);
 }
 
-#id06 {}
+.undergraduate-table tr:nth-child(odd) {
+    background-color: rgba(71, 89, 126, 0.65);
+}
 
-.id07 {
+.undergraduate-table tr:hover {
+    background-color: #FFFFFF;
+}
+
+.map {
     margin: 1vw;
 }
 
-#id08 {
-    background-color: #FFFFFF;
-    border: 0.1vw solid #04293A;
-    height: 2vw;
+.map__container {
+    background-color: #EEEEEE;
+    height: 1vw;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-#id09 {
-    background-color: rgba(71, 89, 126, 0.85);
-    height: 2vw;
+.map__row {
+    color: #000000;
+    height: 1vw;
     margin: 0;
     padding: 0;
-    font-family: var(--font);
-    color: #000000;
-    font-size: 1vw;
-    line-height: 2vw;
+    font-size: 0.5vw;
+    line-height: 1vw;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
+    float: left;
 }
 
-#id09:hover{background-color: #FFFFFF;}
+.map__row:hover {
+    opacity: 0.8;
+}
+
+.button-set {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.button-set > button {
+    background-color: #04293A;
+    color: #FFFFFF;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.modal {
+    display: none;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal__content {
+    background-color: #FFFFFF;
+    font-size: 0.65rem;
+    margin: 1% auto;
+    padding: 1vw;
+    border: 0.25vw solid #888;
+    width: 50%;
+}
+
+.modal__close-button {
+    color: #aaa;
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.modal__close-button:hover, .modal__close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.schedule {
+    display: inline-block;
+}
+
+.schedule__time {
+    border-left: 0.15vw solid black;
+    padding-left: 0.5vw;
+    float: right;
+}

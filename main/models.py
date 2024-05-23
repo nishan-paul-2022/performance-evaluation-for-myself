@@ -33,6 +33,19 @@ class Imonlyhuman(models.Model):
         db_table = 'main_imonlyhuman'
 
 
+class Legend(models.Model):
+    day = models.TextField()
+    devotion = models.TextField()
+    breaking = models.TextField()
+    yoga = models.TextField()
+    fueling = models.TextField()
+    healing = models.TextField()
+
+    class Meta:
+        managed = False
+        db_table = 'main_legend'
+
+
 class Undergraduate(models.Model):
     code = models.TextField()
     name = models.TextField()
@@ -116,14 +129,3 @@ class WeightYearB(models.Model):
     class Meta:
         managed = False
         db_table = 'main_weight_year_b'
-
-
-# class Year2023(models.Model):
-#     year = models.TextField()
-#     event = models.TextField()
-#     weight = models.TextField()
-#     value = models.TextField()
-#
-#     class Meta:
-#         managed = False
-#         db_table = 'main_year_2023'

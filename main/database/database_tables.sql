@@ -21,6 +21,16 @@ CREATE TABLE main_imonlyhuman (
     value text NOT NULL DEFAULT '10'
 );
 
+CREATE TABLE main_legend (
+    id int NOT NULL,
+    day text NOT NULL,
+    devotion text NOT NULL,
+    breaking text NOT NULL,
+    yoga text NOT NULL,
+    fueling text NOT NULL,
+    healing text NOT NULL
+);
+
 CREATE TABLE main_undergraduate (
     id int NOT NULL,
     code text NOT NULL,
@@ -91,26 +101,20 @@ CREATE TABLE main_weight_year_b (
     n2022 text NOT NULL
 );
 
-ALTER TABLE main_academic
-  ADD PRIMARY KEY (id);
+ALTER TABLE main_academic ADD PRIMARY KEY (id);
 
-ALTER TABLE main_daily
-  ADD PRIMARY KEY (id);
+ALTER TABLE main_daily ADD PRIMARY KEY (id);
 
-ALTER TABLE main_imonlyhuman
-  ADD PRIMARY KEY (id);
+ALTER TABLE main_imonlyhuman ADD PRIMARY KEY (id);
 
-ALTER TABLE main_undergraduate
-  ADD PRIMARY KEY (id);
+ALTER TABLE main_legend ADD PRIMARY KEY (id);
 
-ALTER TABLE main_value_year_a
-  ADD PRIMARY KEY (id);
+ALTER TABLE main_undergraduate ADD PRIMARY KEY (id);
 
-ALTER TABLE main_value_year_b
-  ADD PRIMARY KEY (id);
+ALTER TABLE main_value_year_a ADD PRIMARY KEY (id);
 
-ALTER TABLE main_weight_year_a
-  ADD PRIMARY KEY (id);
+ALTER TABLE main_value_year_b ADD PRIMARY KEY (id);
 
-ALTER TABLE main_weight_year_b
-  ADD PRIMARY KEY (id);
+ALTER TABLE main_weight_year_a ADD PRIMARY KEY (id);
+
+ALTER TABLE main_weight_year_b ADD PRIMARY KEY (id);

@@ -1,0 +1,16 @@
+    {% load static %}
+
+     <div class="map">
+        {% for row in legend_summary %}
+            <div class="map__container">
+                {% for column in row %}
+                    <div class="map__row" style="width: {{ column.score }}%; background-color: {{ column.background_color }};">
+                        {% if column.background_color == '#90D26D' %}
+                            <b>[ {{ column.day }} ]</b>
+                        {% endif %}
+                        {{ column.score }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>

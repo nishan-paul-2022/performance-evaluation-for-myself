@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main',
+    'main'
 ]
 
 MIDDLEWARE = [
@@ -60,10 +60,10 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
+                'django.contrib.messages.context_processors.messages'
+            ]
+        }
+    }
 ]
 
 WSGI_APPLICATION = 'psycheval.wsgi.application'
@@ -75,7 +75,7 @@ DATABASES = {
     'default': {
         # OPTION 1
         # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3'
 
         # OPTION 2
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -83,7 +83,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'nishan',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '5432'
 
         # OPTION 3
         # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -91,7 +91,7 @@ DATABASES = {
         # 'USER': 'zwvgvxrtrcezmy',
         # 'PASSWORD': '52331085e612ca3d83de3cafd1b84c520c716faa83bba7941008b7fd8d933f5d',
         # 'HOST': 'ec2-44-206-197-71.compute-1.amazonaws.com',
-        # 'PORT': '5432',
+        # 'PORT': '5432'
     }
 }
 
@@ -99,10 +99,10 @@ DATABASES = {
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',},
-    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',},
-    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',},
-    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',},
+    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'}
 ]
 
 # Internationalization

@@ -1,16 +1,80 @@
 {% load static %}
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title>PSYCH EVAL</title>
-        <meta charset="UTF-8">
-        <link rel="icon" href="{% static 'images/icon.png' %}">
-    </head>
+	<head>
+		<title>PSYCH EVAL</title>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="{% static 'images/icon.png' %}" />
+	</head>
 
-    <body>
-        <div id="id01"></div>
-        <script src="{% static 'js/canvasjs.min.js' %}"></script>
-        <script src="{% static 'js/main.js' %}"></script>
-    </body>
+	<body>
+		<div id="modal-schedule" class="modal">
+			<div class="modal__content">
+				<span class="modal__close-button">&times;</span>
+				<div>
+					<div class="schedule">
+						<div>
+							<h4>DEVOTION / BRAIN [ 14 hours : 70 points ]</h4>
+							<ul>
+								<li>DEVELOPING</li>
+								<li>MACHINE LEARNING</li>
+								<li>DEVOPS</li>
+								<li>PROBLEM SOLVING</li>
+								<li>CYBER SECURITY</li>
+								<li>SIS</li>
+							</ul>
+						</div>
+
+						<div>
+							<h4>BREAKING / BODY [ 1 hour : 10 points ]</h4>
+							<ul>
+								<li>BACK + BICEPS</li>
+								<li>CHEST + TRICEPS</li>
+								<li>LEG + SHOULDER</li>
+							</ul>
+						</div>
+
+						<div>
+							<h4>YOGA / MIND [ 1 hour : 10 points ]</h4>
+							<ul>
+								<li>BOOK</li>
+								<li>MOVIE</li>
+								<li>OFFLINE</li>
+							</ul>
+						</div>
+
+						<div>
+							<h4>FUELING / FOOD [ 1 hour : 5 points ]</h4>
+							<ul>
+								<li>WATER : 3 LITRE</li>
+								<li>PROTEIN : 90 GRAM</li>
+							</ul>
+						</div>
+
+						<div>
+							<h4>HEALING / SLEEP [ 6 hours : 5 points ]</h4>
+						</div>
+
+						<div>
+							<h4>SYSTEM LOSS [ 1 hour : 0 point ]</h4>
+						</div>
+					</div>
+
+					<div class="schedule__time">
+						<h5>00.00 - 06.00 : HEALING</h5>
+						<h5>06.00 - 15.00 : DEVOTION</h5>
+						<h5>15.00 - 16.00 : FUELING + YOGA</h5>
+						<h5>16.00 - 21.00 : DEVOTION</h5>
+						<h5>21.00 - 00.00 : BREAKING + FUELING + YOGA + SYSTEM LOSS</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="main-container"></div>
+
+		<script src="{% static 'js/canvasjs.min.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+	</body>
 </html>
